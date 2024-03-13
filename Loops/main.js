@@ -305,22 +305,93 @@ for (let i = 0; i < scores.length; i++) {
 }
 
 
-//////Question no 1
+//////Question no 15
+
+const A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+for (let i = 0; i < A.length; i++) {
+    for (let j = 0; j < A[i].length; j++) {
+        console.log(A[i][j]);
+    }
+}
+
+
+//////Question no 16
+let num = parseFloat(prompt("Enter a number:"));
+
+
+if (isNaN(num)) {
+    console.log("Invalid input. Please enter a valid number.");
+} else {
+   
+    while (num > 0) {
+        console.log(num);
+        num -= 0.5;
+    }
+}
+
+
+//////Question no 17
+
+for (let i = 0; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(`${i} is even`);
+    } else {
+        console.log(`${i} is odd`);
+    }
+}
+
+
+//////Question no 18
+
+let product = 1;
+
+for (let i = 1; i <= 7; i++) {
+    
+    if (i % 2 !== 0) {
+        product *= i;
+    }
+}
+console.log("Product of odd integers from 1 to 7:", product);
 
 
 
-//////Question no 1
+//////Question no 19
+const initialStars = parseInt(prompt("Enter the initial number of stars:"));
+
+if (isNaN(initialStars) || initialStars <= 0) {
+    console.log("Invalid input. Please enter a positive number.");
+} else {
+    for (let i = initialStars; i > 0; i--) {
+        let line = '';
+        for (let j = 0; j < i; j++) {
+            line += '*';
+        }
+       
+        console.log(line);
+    }
+}
 
 
+//////Question no 20
+const numLines = parseInt(prompt("Enter the number of lines:"));
 
-//////Question no 1
+  document.write("<strong>Pattern 1:</strong><br>");
+  for (let i = 1; i <= numLines; i++) {
+    for (let j = 1; j <= i; j++) {
+      document.write("*");
+    }
+    document.write("<br>");
+  }
+  document.write("<br>");
 
 
-
-
-
-
-//////Question no 1
+  document.write("<strong>Pattern 2:</strong><br>");
+  for (let i = numLines; i >= 1; i--) {
+    for (let j = 1; j <= i; j++) {
+      document.write("*");
+    }
+    document.write("<br>");
+  }
 
 
 
