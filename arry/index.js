@@ -124,3 +124,63 @@ console.log(newArr);
 // const names = ['Asad' , 'Hanif' , 'DH'];
 // const str = names.join(' ')
 // console.log(str);
+
+
+
+
+
+
+
+//concat
+//sort
+//reverse
+//indexof
+
+
+
+// const shop = ['Apple', 'Banana',  'Orange', 'Mango', 'Grape', 'Strawberry']
+// console.log(fruits.includes('dafdsfdsfd'));
+// console.log(fruits.indexOf('fsdkjfhsdjkfh'));
+
+// fruits.shift();
+// fruits.unshift('Guaava' , 'Faalsa');
+// fruits.unshift('Apple');
+// fruits.splice(2, 3 ,);
+// fruits.pop();
+// fruits.push('Watermelon');
+// fruits.push('Strawberry');
+// fruits.splice(2 , 2);
+// fruits.splice(2 , 0 , 'fruit 1' , 'fruit 2');
+// fruits.splice(3 , 0 , 'fruit 3' , 'fruit 4');
+
+
+
+
+// console.log(fruits);
+
+
+
+
+
+
+
+
+
+
+
+const shop = ['Apple', 'Banana',  'Orange', 'Mango', 'Grape', 'Strawberry'];
+const input = document.querySelector('#input');
+const h2 = document.querySelector('h2');
+function getFruits(){
+    console.log(input.value)
+    if(shop.includes(input.value)){
+        console.log('fruit available haa..')
+        h2.innerHTML = `${input.value} is available`
+    }else{
+        console.log('fruit available nahi ha');
+        h2.innerHTML = `${input.value} is not available`
+    }
+
+
+    input.value = ''
+}
