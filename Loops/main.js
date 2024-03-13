@@ -245,24 +245,64 @@ console.log("The smallest number in the array is:", minNumber);
 
 
 
-//////Question no 1
+//////Question no 11
+
+
+
+const A = [24, 53, 78, 91, 12];
+
+let maxNumber = A[0]; 
+let minNumber = A[0]; 
+
+
+for (let i = 1; i < A.length; i++) {
+    if (A[i] > maxNumber) {
+        maxNumber = A[i]; 
+    }
+    if (A[i] < minNumber) {
+        minNumber = A[i]; 
+    }
+}
+
+console.log("The largest number in the array is:", maxNumber);
+console.log("The smallest number in the array is:", minNumber);
 
 
 
 
-//////Question no 1
+//////Question no 12
+for (let i = 1; i <= 100; i++) {
+    if (i % 5 === 0) {
+        console.log(i);
+    }
+}
+
+
+//////Question no 13
+
+var students = ["Asad", "jawad", "yousuf", "haseeb"];
+var scores = [58, 73, 89, 90];
+
+// Displaying students' names along with their scores
+for (let i = 0; i < students.length; i++) {
+    console.log(`${students[i]} scored ${scores[i]} marks.`);
+}
 
 
 
+//////Question no 14
 
-//////Question no 1
+var scores = [12, 45, 3, 22, 34, 50];
 
+var stopValue = parseInt(prompt("Enter the stop value:"));
 
-
-
-//////Question no 1
-
-
+for (let i = 0; i < scores.length; i++) {
+    if (scores[i] <= stopValue) {
+        console.log(scores[i]);
+    } else {
+        break; 
+    }
+}
 
 
 //////Question no 1
